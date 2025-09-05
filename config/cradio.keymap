@@ -29,15 +29,15 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-        lyrsft: layer_shift {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            // bindings = <&lt RIG SPACE>, <&lt LEF SPACE>;
-            bindings = <&kp SPACE>, <&mo RIG>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
+        // lyrsft: layer_shift {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     #binding-cells = <0>;
+        //     // bindings = <&lt RIG SPACE>, <&lt LEF SPACE>;
+        //     bindings = <&kp SPACE>, <&mo RIG>;
+        //     mods = <(MOD_LSFT)>;
+        //     keep-mods = <(MOD_LSFT)>;
 
-        };
+        // };
     };
 
 
@@ -56,7 +56,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ENTER    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                          &ht LGUI ESC  &kp LSHIFT    &lyrsft    &kp BSPC
+                                          &ht LGUI ESC  &kp LSHIFT   &lt RIG SPACE  &kp BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
