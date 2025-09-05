@@ -15,7 +15,7 @@
 
 #define MAC 0
 #define RIG 1
-#define LEF 2
+
 
 / {
     behaviors {
@@ -32,10 +32,10 @@
         lyrsft: layer_shift {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lt RIG SPACE>, <&mo LEF>;
             // bindings = <&lt RIG SPACE>, <&lt LEF SPACE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            // keep-mods = <(MOD_LSFT)>;
+            bindings = <&kp SPACE>, <&mo RIG>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
 
         };
     };
@@ -56,7 +56,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ENTER    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp TAB    &kp LSHIFT     &lyrsft    &kp BSPC
+                                          &ht LGUI ESC  &kp LSHIFT    &lyrsft    &kp BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -67,31 +67,29 @@
         //╭─────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
             &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &trans    HRML(S,         D,         F)     &trans         &trans     &kp LARW   &kp DARW   &kp UARW   &kp RARW      
+            &kp GRAVE  HRML(S,         D,         F)    &trans          &trans    &kp LARW   &kp UARW  &kp DARW    &kp RARW     
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &trans     &trans     &trans     &trans     &trans         &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END   
+            &trans     &trans     &trans     &trans     &trans          &kp LBKT    &kp RBKT  &kp COLON  &kp SQT   &kp BSLH 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
 
-        left_layer {
-            bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ~       │
-            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  "       │  [       │  {       │  (       │          │   │   /      │  -       │  =       │     :    │  ;       │
-            &kp DQT  &kp LBKT   &kp LBRC   &kp LPAR   &trans         &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  '       │  ]       │  }       │  )       │          │   │    \     │  _       │  +       │  │       │   ?      │
-            &kp SQT     &kp RBKT   &kp RBRC   &kp RPAR   &trans         &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            >;
-        };
+        // left_layer {
+        //     bindings = <
+        // //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        // //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ~       │
+        //     &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE
+        // //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //     &kp TILDE  &trans     &trans     &trans     &trans        &trans     &trans     &trans     &trans     &trans
+        // //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //     &trans     &trans     &trans     &trans     &trans          &trans     &trans     &trans     &trans     &trans
+        // //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴─────────╯
+        //                                      &trans     &trans         &trans     &trans
+        // //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+        //     >;
+        // };
 
         // tri_layer {
         //     bindings = <
