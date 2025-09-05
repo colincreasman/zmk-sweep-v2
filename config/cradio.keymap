@@ -14,9 +14,9 @@
 #define WHRMR(k1,k2,k3) &ht RCTRL k1  &ht RGUI k2  &ht RALT k3
 
 #define MAC 0
-#define RIG 2
-#define LEF 3
-#define TRI 4
+#define RIG 1
+#define LEF 2
+#define TRI 3
 
 / {
     behaviors {
@@ -54,7 +54,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ENTER    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt LEF ESC  &kp LSHIFT    &kp SPACE   &lt RIG BSPC
+                                           &lt LEF ESC  &kp LSHIFT   &kp BSPC   &lt RIG SPACE 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
