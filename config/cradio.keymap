@@ -64,14 +64,14 @@
 
         right_layer {
             bindings = <
-        //╭─────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-            &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
+        //╭─────────┬──────────┬──────────┬──────────┬───────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+           &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp GRAVE  HRML(S,         D,         F)    &trans          &trans    &kp LARW   &kp UARW  &kp DARW    &kp RARW     
+           &kp GRAVE  HRML(S,         D,         F)    &trans         &kp SEMI   &kp SQT    &kp UARW   &kp LBKT   &kp RBKT     
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &trans     &trans     &trans     &trans     &trans          &kp LBKT    &kp RBKT  &kp COLON  &kp SQT   &kp BSLH 
+           &trans     &trans     &trans     &trans     &trans         &kp FSLH   &kp LARW   &kp DARW   &kp RARW   &kp BSLH 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                            &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
