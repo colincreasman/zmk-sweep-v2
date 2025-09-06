@@ -10,8 +10,6 @@
 // Home row mods macro
 #define HRML(k2,k3,k4) &ht LCTRL k2  &ht LALT k3  &ht LGUI k4
 #define HRMR(k1,k2,k3) &ht RGUI k1  &ht RALT k2  &ht RCTRL k3
-// #define WHRML(k2,k3,k4) &ht LALT k2  &ht LGUI k3  &ht LCTRL k4
-// #define WHRMR(k1,k2,k3) &ht RCTRL k1  &ht RGUI k2  &ht RALT k3
 
 #define MAC 0
 #define RIG 1
@@ -29,15 +27,6 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-        // lyrsft: layer_shift {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     #binding-cells = <0>;
-        //     // bindings = <&lt RIG SPACE>, <&lt LEF SPACE>;
-        //     bindings = <&kp SPACE>, <&mo RIG>;
-        //     mods = <(MOD_LSFT)>;
-        //     keep-mods = <(MOD_LSFT)>;
-
-        // };
     };
 
 
