@@ -12,6 +12,7 @@
 
 #define L0 0
 #define L1 1
+#define L2 2
 
 
 / {
@@ -50,13 +51,28 @@
         layer_one {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-          &kp ESC    &kp N1     &kp N2     &kp N3     &trans         &trans     &trans     &kp UARW   &kp MINUS  &kp EQUAL
+            &kp ESC    &kp N1     &kp N2     &kp N3     &trans         &trans     &trans     &kp UARW   &kp MINUS  &kp EQUAL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-          HRML(GRAVE,    N4,        N5,        N6)    &trans         &kp HOME   &kp LARW   &kp DARW   &kp RARW   &kp END   
+            HRML(GRAVE,    N4,        N5,        N6)    &trans         &kp HOME   &kp LARW   &kp DARW   &kp RARW   &kp END   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-          &trans     &kp N7     &kp N8     &kp N9     &kp N0         &kp SEMI   &kp SQT    &kp LBKT   &kp RBKT   &trans      
+            &trans     &kp N7     &kp N8     &kp N9     &kp N0         &kp SEMI   &kp SQT    &kp LBKT   &kp RBKT   &trans      
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &trans     &trans         &trans     &trans
+                                             &trans     &trans         &trans     &trans
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
+
+
+        layer_two {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans      
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
