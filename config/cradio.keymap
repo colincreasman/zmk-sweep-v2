@@ -31,8 +31,8 @@
             compatible = "zmk,combos";
             combo_media {
                 timeout-ms = <50>;
-                key-positions = <30 33>;  // Combo outer thumb keys for L2
-                bindings = <&mo L2>;
+                key-positions = <29 32>;  // Combo inner thumb keys for ESCAPE
+                bindings = <&kp ESC>;
             };
         };
     };
