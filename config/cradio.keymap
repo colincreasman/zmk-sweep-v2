@@ -30,8 +30,8 @@
         combos {
             compatible = "zmk,combos";
             combo_media {
-                timeout-ms = <50>;
-                key-positions = <29 32>;  // Combo inner thumb keys for ESCAPE
+                // timeout-ms = <50>;
+                key-positions = <0 1>;  // Combo inner thumb keys for ESCAPE
                 bindings = <&kp ESC>;
             };
         };
