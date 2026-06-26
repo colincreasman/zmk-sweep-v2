@@ -21,23 +21,27 @@
             label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <220>;
             quick-tap-ms = <150>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-        combos {
-            compatible = "zmk,combos";
-            combo_media {
-                // timeout-ms = <50>;
-                key-positions = <0 1>;  // Combo inner thumb keys for ESCAPE
-                bindings = <&kp ESC>;
-            };
-        };
     };
 
-
+    combos {
+        compatible = "zmk,combos";
+        combo_esc_op {
+            // timeout-ms = <50>;
+            key-positions = <8 9>;  // Combo o+p for ESCAPE
+            bindings = <&kp ESC>;
+        };
+        combo_esc_qw {
+            // timeout-ms = <50>;
+            key-positions = <0 1>;  // Combo q+w for ESCAPE
+            bindings = <&kp ESC>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
