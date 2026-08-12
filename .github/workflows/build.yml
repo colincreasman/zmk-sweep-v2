@@ -1,12 +1,6 @@
 name: Build ZMK firmware
-on:
-  push:
-    paths:
-      - config/**
-      - build.yaml
-      - .github/workflows/build.yml
-  pull_request:
-  workflow_dispatch:
+on: [push, pull_request, workflow_dispatch]
+
 
 jobs:
   # Derive a short, meaningful name for the firmware archive from the commit
@@ -33,6 +27,6 @@ jobs:
 
   build:
     needs: prepare
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3.0
     with:
       archive_name: ${{ needs.prepare.outputs.archive_name }}
