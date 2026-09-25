@@ -123,7 +123,7 @@
         };
         combo_maintenance_layer {
             timeout-ms = <100>;
-            key-positions = <31 32>;
+            key-positions = <30 33>;
             bindings = <&mo L3>;
             layers = <L0 L1 L2>;
         };
