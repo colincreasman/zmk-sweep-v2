@@ -1,0 +1,10 @@
+description: Long-press behavior
+compatible: "zmk,behavior-long-press"
+include: zero_param.yaml
+properties:
+  bindings:
+    type: phandles
+    required: true
+  duration-ms:
+    type: int
+    required: true
