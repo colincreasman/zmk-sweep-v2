@@ -112,12 +112,12 @@
     combos {
         compatible = "zmk,combos";
         combo_esc_op {
-            // timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <8 9>;  // Combo o+p for ESCAPE
             bindings = <&kp ESC>;
         };
         combo_esc_qw {
-            // timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <0 1>;  // Combo q+w for ESCAPE
             bindings = <&kp ESC>;
         };
