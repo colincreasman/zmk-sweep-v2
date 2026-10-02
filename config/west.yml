@@ -2,10 +2,16 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
+    # Status screen for the PandaKB dongle's OLED, on the ZMK v0.3 line.
+    - name: zmk-dongle-display
+      remote: englmaxi
+      revision: v0.3
   self:
     path: config
