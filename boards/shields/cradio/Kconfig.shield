@@ -1,0 +1,6 @@
+# Dongle for the Ferris Sweep (ZMK's built-in `cradio` shield). Only the dongle
+# lives here; the halves still come from ZMK's own cradio shield. Keeping this
+# folder named `cradio` lets the dongle find config/cradio.keymap, exactly as
+# ZMK's dongle guide describes for keyboards defined in ZMK itself.
+config SHIELD_CRADIO_DONGLE
+    def_bool $(shields_list_contains,cradio_dongle)

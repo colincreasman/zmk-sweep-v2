@@ -1,0 +1,20 @@
+# Only the dongle is configured here. The halves are configured by ZMK's own
+# cradio shield, whose left half defaults ZMK_SPLIT_ROLE_CENTRAL to y as a plain
+# default; the dongle-mode build of that half overrides it with
+# -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n (see build.yaml).
+if SHIELD_CRADIO_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "Cradio Dongle"
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+# Both keyboard halves are peripherals of the dongle.
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+
+endif
