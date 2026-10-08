@@ -1,0 +1,218 @@
+{
+ "board": "sweep-bling-lp",
+ "params": {
+  "pcb_t": 1.6,
+  "gap": 0.4,
+  "wall": 1.6,
+  "slab_t": 2.2,
+  "edge_chamfer": 0.6,
+  "cut": 14.0,
+  "relief_w0": 15.8,
+  "relief_w1": 14.6,
+  "relief_z": 0.66,
+  "ledge_z": 0.7,
+  "cav": 3.0,
+  "floor": 1.6,
+  "seam_drop": 0.2,
+  "screw_d": 2.4,
+  "csk_d": 4.4,
+  "nut_af": 4.3,
+  "nut_depth": 1.8,
+  "under_h": 1.9,
+  "boss_d": 5.6,
+  "pillar_d": 3.2,
+  "min_clear": 0.3,
+  "keycap": [
+   17.45,
+   16.45
+  ],
+  "keycap_clear": 0.6,
+  "keycap_pressed_z": 3.58,
+  "flange": 15.0,
+  "flange_clear": 0.25,
+  "hood_wall": 1.4,
+  "hood_roof": 1.2,
+  "hood_clear": 0.4,
+  "feet_d": 0.0,
+  "feet_depth": 0.6,
+  "min_feature": 0.8,
+  "film_clear": 0.3,
+  "film_min": 1.5
+ },
+ "halves": {
+  "left": {
+   "top": {
+    "part": "top",
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 9.45,
+    "size_mm": [
+     112.9,
+     90.9,
+     7.2
+    ],
+    "interference": {
+     "pcb": 0.0,
+     "switch_lower": 0.0,
+     "switch_upper": 0.0,
+     "keycaps_pressed": 0.0,
+     "under_pcb": 0.0,
+     "part_hood": 0.0,
+     "part_below": 0.0
+    },
+    "ok": true,
+    "thin_trimmed_mm3": 22.87,
+    "stl_ok": true
+   },
+   "base": {
+    "part": "base",
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 16.19,
+    "size_mm": [
+     112.9,
+     90.9,
+     6.0
+    ],
+    "interference": {
+     "pcb": -0.0,
+     "switch_lower": 0.0,
+     "switch_upper": 0.0,
+     "keycaps_pressed": 0.0,
+     "under_pcb": 0.0,
+     "part_hood": 0.0,
+     "part_below": 0.0
+    },
+    "ok": true,
+    "thin_trimmed_mm3": 8.99,
+    "stl_ok": true
+   },
+   "switches": 17,
+   "mounts": [
+    {
+     "x": 203.92,
+     "y": 28.19,
+     "pcb_hole": 3.35,
+     "support_mm2": 15.2
+    },
+    {
+     "x": 231.65,
+     "y": 91.57,
+     "pcb_hole": 3.35,
+     "support_mm2": 11.2
+    },
+    {
+     "x": 150.48,
+     "y": 82.42,
+     "pcb_hole": 3.35,
+     "support_mm2": 13.6
+    },
+    {
+     "x": 146.91,
+     "y": 38.35,
+     "pcb_hole": 3.35,
+     "support_mm2": 13.0
+    }
+   ],
+   "pillars": 17,
+   "unhandled": [],
+   "film": {
+    "size_mm": [
+     105.4,
+     79.5
+    ],
+    "pieces": 2,
+    "area_cm2": 21.3,
+    "clearance_mm": 0.3,
+    "ok": true
+   }
+  },
+  "right": {
+   "top": {
+    "part": "top",
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 9.47,
+    "size_mm": [
+     113.0,
+     90.9,
+     7.2
+    ],
+    "interference": {
+     "pcb": 0.0,
+     "switch_lower": 0.0,
+     "switch_upper": 0.0,
+     "keycaps_pressed": 0.0,
+     "under_pcb": 0.0,
+     "part_hood": 0.0,
+     "part_below": 0.0
+    },
+    "ok": true,
+    "thin_trimmed_mm3": 20.77,
+    "stl_ok": true
+   },
+   "base": {
+    "part": "base",
+    "watertight": true,
+    "bodies": 1,
+    "volume_cm3": 16.22,
+    "size_mm": [
+     113.0,
+     90.9,
+     6.0
+    ],
+    "interference": {
+     "pcb": 0.0,
+     "switch_lower": 0.0,
+     "switch_upper": 0.0,
+     "keycaps_pressed": 0.0,
+     "under_pcb": 0.0,
+     "part_hood": 0.0,
+     "part_below": 0.0
+    },
+    "ok": true,
+    "thin_trimmed_mm3": 3.09,
+    "stl_ok": true
+   },
+   "switches": 17,
+   "mounts": [
+    {
+     "x": 56.64,
+     "y": 28.19,
+     "pcb_hole": 3.35,
+     "support_mm2": 15.2
+    },
+    {
+     "x": 110.11,
+     "y": 82.42,
+     "pcb_hole": 3.35,
+     "support_mm2": 15.2
+    },
+    {
+     "x": 28.96,
+     "y": 91.57,
+     "pcb_hole": 3.35,
+     "support_mm2": 15.0
+    },
+    {
+     "x": 113.67,
+     "y": 38.35,
+     "pcb_hole": 3.35,
+     "support_mm2": 15.2
+    }
+   ],
+   "pillars": 17,
+   "unhandled": [],
+   "film": {
+    "size_mm": [
+     105.5,
+     79.4
+    ],
+    "pieces": 2,
+    "area_cm2": 21.3,
+    "clearance_mm": 0.3,
+    "ok": true
+   }
+  }
+ }
+}
