@@ -51,14 +51,21 @@ Put these in the order notes:
 
 **Hardware (both halves).** JLC only offers threaded inserts from M3 up, so the base holds
 plain M2 nuts instead. Any hardware store, McMaster-Carr, or an M2 assortment kit with 8 mm
-countersunk screws will do. Get a few spares of each.
+countersunk screws will do. Get a few spares of each. The Amazon links below matched these
+specs and were in stock on 2026-10-08.
 
 - 8 × M2×8 countersunk screws (ISO 10642 / DIN 7991, 90° flat head). Must be **8 mm** overall:
-  6 mm is too short to reach the nut.
-- 8 × M2 hex nuts (DIN 934, 4 mm across flats).
+  6 mm is too short to reach the nut, and 10 mm sticks out of the bottom. For example
+  [iexcell M2×8, 100-pack](https://www.amazon.com/dp/B0GYKDNQW7) ($8, comes with the hex key),
+  or [black, 50-pack](https://www.amazon.com/dp/B0H5JSLK5S) ($6, also with a key) to match a black case.
+- 8 × plain M2 hex nuts (DIN 934: 4 mm across flats, 1.6 mm thick). Not nylon-insert lock nuts:
+  they're too thick for the pockets. For example [uxcell M2, 100-pack](https://www.amazon.com/dp/B07H3SXSN2) ($8).
 - A 1.3 mm hex key for those screws (or a small Phillips driver for Phillips flat heads).
-- A small flat needle file and a hobby knife, to clean up support marks.
-- Optional: small self-adhesive rubber bumpers for the bottom.
+- A small flat needle file and a hobby knife, to clean up support marks. For example a
+  [6-piece mini file set](https://www.amazon.com/dp/B07KH8BG1F) ($5), and the X-ACTO knife from
+  the [switch film](#shopping-list) list.
+- Optional: small self-adhesive rubber bumpers for the bottom, for example
+  [3/8 in clear bumpers](https://www.amazon.com/dp/B0CKLX6KQQ) ($6).
 - Optional: supplies for a Toucan 2-style [switch film](#switch-film-optional).
 
 ## Files (`stl/`)
