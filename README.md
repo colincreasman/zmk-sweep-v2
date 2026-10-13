@@ -3,8 +3,9 @@
 ZMK config for the Ferris Sweep, built on ZMK's own `cradio` shield. The keymap is
 [config/cradio.keymap](config/cradio.keymap).
 
-An enclosed case for the Sweep Bling LP, ready to order from JLCPCB's 3D-printing service, is in
-[case/](case/README.md).
+Two printable cases for the Sweep Bling LP, ready to order from JLCPCB's 3D-printing service, are in
+[case/](case/README.md): the enclosed case (a flat plate, like the Forager) and the sandwich case
+(keycaps sit in wells, like the Totemist).
 
 # Dongle mode (PandaKB USB dongle)
 
