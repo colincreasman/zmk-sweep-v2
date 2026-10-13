@@ -1,0 +1,235 @@
+{
+ "board": "sweep-bling-lp",
+ "rim_above_pcb": 9.05,
+ "mbk_top_above_pcb": 10.5,
+ "halves": {
+  "left": {
+   "top": {
+    "part": "top",
+    "pieces": 1,
+    "genus": 43,
+    "status": "NoError",
+    "volume_cm3": 15.72,
+    "size_mm": [
+     113.6,
+     91.7,
+     9.05
+    ],
+    "clash_mm3": {
+     "PCB": 0.0,
+     "switches": -0.0,
+     "keycaps, full travel": 0.0,
+     "nice!nano, battery, TRRS, reset": 0.0,
+     "USB-C slot, reset hole": 0.0
+    },
+    "gap_mm": {
+     "PCB": 0.0,
+     "switches": 0.0,
+     "keycaps, full travel": 0.32,
+     "nice!nano, battery, TRRS, reset": 0.4,
+     "USB-C slot, reset hole": 0.0
+    },
+    "ok": true,
+    "closed_pockets": [],
+    "stl_ok": true
+   },
+   "base": {
+    "part": "base",
+    "pieces": 1,
+    "genus": 7,
+    "status": "NoError",
+    "volume_cm3": 17.38,
+    "size_mm": [
+     113.6,
+     91.7,
+     6.0
+    ],
+    "clash_mm3": {
+     "pcb": -0.0,
+     "switch_lower": 0.0,
+     "switch_upper": 0.0,
+     "under_pcb": 0.0,
+     "part_hood": 0.0,
+     "part_below": 0.0
+    },
+    "gap_mm": {
+     "pcb": 0.0,
+     "switch_lower": 1.27,
+     "switch_upper": 2.44,
+     "under_pcb": 0.1,
+     "part_hood": 0.21,
+     "part_below": 0.31
+    },
+    "ok": true,
+    "stl_ok": true
+   },
+   "shell": {
+    "widest_roof_span_mm": 17.3,
+    "rim_area_mm2": 2547.0,
+    "shelf_area_mm2": 38.4,
+    "hollow_area_mm2": 1441.6,
+    "keycaps_past_outline_mm2": 0.0,
+    "curb_mm2": 52.2,
+    "bay_edge_in_wells_mm": 49.7,
+    "bay_edge_curbed_mm": 48.3,
+    "rim_z": 9.05,
+    "plate_top_z": 2.2,
+    "shelf_z": 2.2,
+    "rim_above_pcb": 9.05,
+    "cap_top_above_rim_mbk": 1.45,
+    "trimmed_mm3": 64.04
+   },
+   "mounts": [
+    {
+     "x": 203.92,
+     "y": 28.19,
+     "pcb_hole": 3.35,
+     "support_mm2": 15.2
+    },
+    {
+     "x": 231.65,
+     "y": 91.57,
+     "pcb_hole": 3.35,
+     "support_mm2": 11.2
+    },
+    {
+     "x": 150.48,
+     "y": 82.42,
+     "pcb_hole": 3.35,
+     "support_mm2": 13.6
+    },
+    {
+     "x": 146.91,
+     "y": 38.35,
+     "pcb_hole": 3.35,
+     "support_mm2": 13.0
+    }
+   ],
+   "film": {
+    "size_mm": [
+     104.6,
+     79.5
+    ],
+    "pieces": 2,
+    "area_cm2": 14.0,
+    "clearance_mm": 0.3,
+    "ok": true
+   },
+   "outline_grown_mm2": 197.7
+  },
+  "right": {
+   "top": {
+    "part": "top",
+    "pieces": 1,
+    "genus": 37,
+    "status": "NoError",
+    "volume_cm3": 15.76,
+    "size_mm": [
+     113.7,
+     91.8,
+     9.05
+    ],
+    "clash_mm3": {
+     "PCB": 0.0,
+     "switches": -0.0,
+     "keycaps, full travel": 0.0,
+     "nice!nano, battery, TRRS, reset": 0.0,
+     "USB-C slot, reset hole": -0.0
+    },
+    "gap_mm": {
+     "PCB": 0.0,
+     "switches": 0.0,
+     "keycaps, full travel": 0.32,
+     "nice!nano, battery, TRRS, reset": 0.4,
+     "USB-C slot, reset hole": 0.0
+    },
+    "ok": true,
+    "closed_pockets": [],
+    "stl_ok": true
+   },
+   "base": {
+    "part": "base",
+    "pieces": 1,
+    "genus": 4,
+    "status": "NoError",
+    "volume_cm3": 17.42,
+    "size_mm": [
+     113.7,
+     91.8,
+     6.0
+    ],
+    "clash_mm3": {
+     "pcb": -0.0,
+     "switch_lower": 0.0,
+     "switch_upper": 0.0,
+     "under_pcb": 0.0,
+     "part_hood": 0.0,
+     "part_below": 0.0
+    },
+    "gap_mm": {
+     "pcb": 0.0,
+     "switch_lower": 1.27,
+     "switch_upper": 2.45,
+     "under_pcb": 0.1,
+     "part_hood": 0.21,
+     "part_below": 0.31
+    },
+    "ok": true,
+    "stl_ok": true
+   },
+   "shell": {
+    "widest_roof_span_mm": 17.3,
+    "rim_area_mm2": 2548.5,
+    "shelf_area_mm2": 37.6,
+    "hollow_area_mm2": 1442.9,
+    "keycaps_past_outline_mm2": 0.0,
+    "curb_mm2": 52.7,
+    "bay_edge_in_wells_mm": 49.3,
+    "bay_edge_curbed_mm": 48.2,
+    "rim_z": 9.05,
+    "plate_top_z": 2.2,
+    "shelf_z": 2.2,
+    "rim_above_pcb": 9.05,
+    "cap_top_above_rim_mbk": 1.45,
+    "trimmed_mm3": 58.51
+   },
+   "mounts": [
+    {
+     "x": 56.64,
+     "y": 28.19,
+     "pcb_hole": 3.35,
+     "support_mm2": 15.2
+    },
+    {
+     "x": 110.11,
+     "y": 82.42,
+     "pcb_hole": 3.35,
+     "support_mm2": 15.2
+    },
+    {
+     "x": 28.96,
+     "y": 91.57,
+     "pcb_hole": 3.35,
+     "support_mm2": 15.0
+    },
+    {
+     "x": 113.67,
+     "y": 38.35,
+     "pcb_hole": 3.35,
+     "support_mm2": 15.2
+    }
+   ],
+   "film": {
+    "size_mm": [
+     104.6,
+     79.4
+    ],
+    "pieces": 2,
+    "area_cm2": 14.0,
+    "clearance_mm": 0.3,
+    "ok": true
+   },
+   "outline_grown_mm2": 200.2
+  }
+ }
+}
