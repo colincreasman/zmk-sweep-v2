@@ -100,7 +100,7 @@ Then order the case and the hardware. With express shipping it takes about 1–1
 you wait:
 
 - Work on the dead key while the board is apart: see
-  [KEYBOARD-MOISTURE-PLAN.md](../../KEYBOARD-MOISTURE-PLAN.md#sweep-and-totemist-inspect-connections-before-replacing-more-switches).
+  [KEYBOARD-MOISTURE-PLAN.md](../../../KEYBOARD-MOISTURE-PLAN.md#sweep-and-totemist-inspect-connections-before-replacing-more-switches).
   Clean off any sweat residue before the board goes into the new case.
 - Put it back in its tray if you want to keep typing on it in the meantime.
 - Cut the [switch film](#switch-film-optional) if you want one.
@@ -215,7 +215,7 @@ each switch. You can add the same layer to this case: a sheet of clear PET film,
   threads. Don't use anything thicker than 7 mil (0.18 mm).
 - **PET film only.** The Toucan's foam is there for sound. Against a PCB, foam soaks up sweat
   and holds it there, and so do felt and paper (see
-  [KEYBOARD-MOISTURE-PLAN.md](../../KEYBOARD-MOISTURE-PLAN.md)). Skip self-adhesive sheets too:
+  [KEYBOARD-MOISTURE-PLAN.md](../../../KEYBOARD-MOISTURE-PLAN.md)). Skip self-adhesive sheets too:
   they glue themselves to the PCB.
 
 ### Get the shape
@@ -319,6 +319,8 @@ cars and direct summer sun.
 
 ## Regenerating or tweaking
 
+From `case/enclosed/`:
+
 ```sh
 python3 -m venv .venv
 .venv/bin/pip install manifold3d shapely trimesh numpy matplotlib
@@ -360,8 +362,8 @@ shells plate-side down, and try `cut` = 13.9.
   the hood can't have a full wall there. There's a ~0.6 mm gap along that edge above 3.3 mm.
 - **Sweat:** the plate covers the PCB everywhere except under the switch housings, and the
   controller is under the hood. This is a splash guard, not waterproofing: see
-  [KEYBOARD-MOISTURE-PLAN.md](../../KEYBOARD-MOISTURE-PLAN.md).
+  [KEYBOARD-MOISTURE-PLAN.md](../../../KEYBOARD-MOISTURE-PLAN.md).
 - **Dimensions:** the case is 1.6 mm thicker underneath than keebmaker's tray. It's 8.4 mm from
   the desk to the plate top, and 13.4 mm to the top of the hood.
-- **License:** `pcb/sweepbling-lp.kicad_pcb` is from davidphilipbarr/Sweep (Solderpad Hardware
+- **License:** `../pcb/sweepbling-lp.kicad_pcb` is from davidphilipbarr/Sweep (Solderpad Hardware
   License v2.1).
