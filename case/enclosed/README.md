@@ -1,5 +1,8 @@
 # Enclosed case: Ferris Sweep Bling LP (wireless)
 
+One of the two case designs in [`case/`](../README.md). The other is the
+[sandwich case](../sandwich/README.md), which keeps all of this and adds a Totemist-style rim.
+
 A two-piece case per half, in the style of the PandaKB Forager:
 
 - **Top shell**: a 2.2 mm switch plate that sits flat on the PCB. It covers the whole board
