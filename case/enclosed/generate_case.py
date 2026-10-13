@@ -78,7 +78,7 @@ P = dict(
 PROFILES = {
     'sweep-bling-lp': dict(
         title='Ferris Sweep Bling LP (davidphilipbarr/Sweep), nice!nano face-down',
-        pcb='pcb/sweepbling-lp.kicad_pcb',
+        pcb='../pcb/sweepbling-lp.kicad_pcb',
         halves={'left': (130.302, 1e9), 'right': (-1e9, 130.302)},
         switch_fp=r'Choc', mount_fp=r'MountingHole',
         ignore_fp=r'mouse-bite|ferris_broom|Tenting|1pin_conn',
