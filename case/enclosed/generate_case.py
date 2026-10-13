@@ -402,7 +402,8 @@ class Half:
         self.under = unary_union(obs)
 
     # ------------------------------------------------------------------
-    def build(self):
+    def build(self, outer=None):
+        """outer: optional case outline (the sandwich variant passes a wider one for its base)."""
         p = P
         sw = self.switches
         hood_parts = [q for q in self.parts if q['kind'] == 'hood']
@@ -411,7 +412,8 @@ class Half:
         hood_top_in = max([q['z'][1] for q in hood_parts], default=0) + p['hood_clear']
         self.hood_out = self.hood_in.buffer(p['hood_wall'], join_style=1)
         self.inner = self.pcb2d.buffer(p['gap'], join_style=1)
-        self.outer = unary_union([self.pcb2d.buffer(p['gap'] + p['wall'], join_style=1), self.hood_out])
+        self.outer = outer if outer is not None else \
+            unary_union([self.pcb2d.buffer(p['gap'] + p['wall'], join_style=1), self.hood_out])
         zb = -p['pcb_t'] - p['cav'] - p['floor']
         self.zb = zb
 
